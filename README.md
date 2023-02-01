@@ -3,4 +3,4 @@ Tutorial: Molecular dynamics simulation of Lennard-Jones particles in microcanon
 
 Please find more detailed comments in jupyter notebook.
 
-A brief Numerical analysis of time step $\Delta t$ in MD
+Question: how to choose the best time step $\Delta t$ in MD? A brief Numerical analysis of $\Delta t$.

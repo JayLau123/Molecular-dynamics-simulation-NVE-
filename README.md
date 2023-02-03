@@ -13,3 +13,4 @@ Follow the evolution of this system by integrating the equations of motion
 For particle i, $F_i=m_ia_i$, note that $F_i$ depends on all other particles, so that for the entire system we have 3N coupled equations
 
 The equation of motion of each particle is integrated numerically. We increase the time in small $\Delta t$ step by step, and determine the positions of all particles at the discrete times.
+

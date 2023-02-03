@@ -35,5 +35,34 @@ $x(t-\Delta t)=x(t)-\dfrac{dx(t)}{dt}\Delta t+\dfrac{1}{2}\dfrac{d^{2}x(t)}{dt^{
 
 Adding these two equations yields:
 
-$x(t+\Delta t)=2x(t)-x(t-\Delta t)+\frac{dx(t)}{dt}\Delta t+\frac{1}{2}\frac{d^{2}x(t)}{dt^{2}}(\Delta t)^{2}+\frac{1}{6}\frac{d^{3}x(t)}{dt^{3}}(\Delta t)^{3}+...$
+$x(t+\Delta t)=2x(t)-x(t-\Delta t)+\dfrac{d^{2}x(t)}{dt^{2}}(\Delta t)^{2}+\mathcal{O}((\Delta t)^4)$
+
+or
+
+$x(t+\Delta t)=2x(t)-x(t-\Delta t)+a(t)(\Delta t)^{2}+\mathcal{O}((\Delta t)^4)$
+
+The velocity $v(t)$ is abtained via:
+
+$v(t)=\dfrac{x(t+\Delta t)-x(t-\Delta t)}{2\Delta t}-\frac{x^{(3)}(\xi)}{6}(\Delta t)^{3}$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

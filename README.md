@@ -29,7 +29,8 @@ The new velocities are computed from the current velocities and the current acce
 One of the most widely used "integrators" (schemes to compute the new positions and velocities from those at an earlier time) is the so-called Verlet algorithm. It follows simply from a Taylor expansion of the positions $x(t)$ as a function of time $t$
 
 
-$x(t+\Delta t)=x(t)+\frac{dx(t)}{dt}\Delta t+\frac{1}{2}\frac{d^{2}x(t)}{dt^{2}}(\Delta t)^{2}+\frac{1}{6}\frac{d^{3}x(t)}{dt^{3}}(\Delta t)^{3}+...$
+$x(t+\Delta t)=x(t)+\frac{dx(t)}{dt}\Delta t+\frac{1}{2}\frac{d^{2}x(t)}{dt^{2}}(\Delta t)^{2}+\frac{1}{6}\frac{d^{3}x(t)}{dt^{3}}(\Delta t)^{3}+... \tag{1}$
 
 $x(t-\Delta t)=x(t)-\frac{dx(t)}{dt}\Delta t+\frac{1}{2}\frac{d^{2}x(t)}{dt^{2}}(\Delta t)^{2}-\frac{1}{6}\frac{d^{3}x(t)}{dt^{3}}(\Delta t)^{3}+...$
+
 

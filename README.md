@@ -86,7 +86,7 @@ No worries because of inaccuracy of higher powers of \Delta t.
 
 No need to store three sets of positions.
 
-## Velicity Verlet
+## Velocity Verlet
 
 Write:
 
@@ -110,13 +110,39 @@ $$x(t+\Delta t)=x(t)+v(t) \Delta t+\dfrac{1}{2} a(t)(\Delta t)^2$$
 It's synchronized form, the time-step $\Delta t$ must be constant to maintain stability. If the initial velocity $v(t)=v(0)=0$, once we know the $x(t)$, we know the $a(t)$ from potential field, so we can calculate the next position $x(t+\Delta t)$, and $a(t+\Delta t)$ is also available. Accordingly, we can calculate the next velocity $v(t+\Delta t)$
 
 
-### Advantages of Velicity Verlet
+### Advantages of Velocity Verlet
 
 Positions $x(t)$, velocities $v(t)$, and accelerations $a(t)$ are available at the same instance.
 
 There is no need to store more than one set of positions, velocities, and accelerations. We only need to know $v(0), x(0),a(0)$, and we can calculate the next step information: $v(\Delta t), x(\Delta t), a(\Delta t)$
 
+## How does a system evolve
 
+Integrate the equations of motion:
+
+Calculate ${x(t+\Delta t),v(t+\Delta t), a(t+\Delta t)}$ from ${x(t),v(t), a(t)}$ 
+
+Assign the initial velocities, such that:
+
+The system has the desired temperature: $E_k=\frac{3}{2}NkT$, and the system has no net momentum: $\sum_{i=1}^{N}m_iv_i=0$
+
+Let the system evolve, it will generally adjust the balance between kinetic and potential energy, so the temperature of the system changes.
+
+Adjust the temperature by rescaling the velocities and let the system evolve again.
+
+#### Note: violation of the following indecates a bug or a too large timestep $\Delta t$:
+
+Global energy conservation: $E_k+E_p=constant$
+
+Momentum conservation
+
+Note: violation of the following indicates lack of equilibrium: 
+
+Temperature fluctuates around a stable average
+
+### How to measure properties
+
+At regular intervals, record properties of interet, there are some usual static properties: $E_k, E_p, P$, and some unusual static properties: average force on a particle, and typical number and type of neighbors, and dynamic properties
 
 
 

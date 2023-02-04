@@ -17,9 +17,9 @@ The equation of motion of each particle is integrated numerically. We increase t
 
 This implies the following iteration:
 
-Use positions at current time to calculate all the forces, $x(t) \Rightarrow F$
+Use positions at current time to calculate all the forces, $x(t) \Rightarrow F(t)$
 
-Forces yields the acceleration of each particle, $F \Rightarrow a$
+Forces yields the acceleration of each particle, $F(t) \Rightarrow a(t)$
 
 The positions at the new time are computed from the current positions and the current velocities, $x(t),v(t) \Rightarrow x(t+\Delta t)$
 

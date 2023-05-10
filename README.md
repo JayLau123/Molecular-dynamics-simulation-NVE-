@@ -8,7 +8,7 @@ Question: how to choose the best time step $\Delta t$ in MD? A brief Numerical a
 
 ## Overview
 
-Molecular dynamics simulations are an important tool for understanding dynamic processes and mechanisms on a microscopic level in various areas of chemistry, biology, and materials science. 
+Molecular dynamics simulations are an important tool for understanding dynamic processes and mechanisms on a microscopic level in various areas of chemistry, biology, and materials science. Besides the prediction of equili- brium properties of molecules and materials, they also offer the possibility to simulate excited states and non-equilibrium dynamics, as well as slow processes and rare events.
 
 Define a system as a set of N particles
 Follow the evolution of this system by integrating the equations of motion

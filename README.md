@@ -10,6 +10,8 @@ Question: how to choose the best time step $\Delta t$ in MD? A brief Numerical a
 
 Molecular dynamics simulations are an important tool for understanding dynamic processes and mechanisms on a microscopic level in various areas of chemistry, biology, and materials science. Besides the prediction of equili- brium properties of molecules and materials, they also offer the possibility to simulate excited states and non-equilibrium dynamics, as well as slow processes and rare events.
 
+In molecular dynamics simulations, total energy and forces are needed in every time step to propagate the system. Computa- tionally demanding ab initio methods that calculate the energy and forces of a particular atomic configuration of a system at every time step are therefore often too costly. （Machine learning methods can replace ab initio calculations to speed up simulations while ideally retaining their accuracy）
+
 Define a system as a set of N particles
 Follow the evolution of this system by integrating the equations of motion
 For particle i, $F_i=m_ia_i$, note that $F_i$ depends on all other particles, so that for the entire system we have 3N coupled equations.

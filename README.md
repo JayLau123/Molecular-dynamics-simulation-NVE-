@@ -8,6 +8,8 @@ Question: how to choose the best time step $\Delta t$ in MD? A brief Numerical a
 
 ## Overview
 
+Molecular dynamics simulations are an important tool for understanding dynamic processes and mechanisms on a microscopic level in various areas of chemistry, biology, and materials science. 
+
 Define a system as a set of N particles
 Follow the evolution of this system by integrating the equations of motion
 For particle i, $F_i=m_ia_i$, note that $F_i$ depends on all other particles, so that for the entire system we have 3N coupled equations.
